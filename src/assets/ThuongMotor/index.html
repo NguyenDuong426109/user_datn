@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cửa Hàng Mua Bán Xe Mô Tô PKL Nhập Khẩu | Dương Motor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<link rel="icon" href="img/header.png" type="image/gif" sizes="16x16">
+</head>
+<body>	
+	<nav>
+		<div class="logo">
+			<a href="index.html">DuongMotor</a>
+		</div>
+		<ul>
+			<li><a href="index.html" style="color: #69BE28">Trang chủ</a></li>
+			<li><a href="intro.html">giới thiệu</a></li>
+			<li>
+				<a href="productmore.html">sản phẩm</a>
+				<ul>
+					<li><a href="honda.html">Honda</a></li>
+					<li><a href="kawasaki.html">Kawasaki</a></li>
+					<li><a href="honda.html">Yamaha</a></li>
+					<li><a href="honda.html">Suzuki</a></li>
+					<li><a href="honda.html">Royal Enfield</a></li>
+					<li><a href="honda.html">Beneli</a></li>
+					<li><a href="honda.html">Bixton</a></li>
+					<li><a href="honda.html">Hãng khác</a></li>
+				</ul>
+			</li>
+			<li><a href="service.html">Dịch vụ</a></li>
+			<li><a href="news.html">Tin tức</a></li>
+			<li><a href="cart.html">Giỏ hàng</a></li>
+			<li><a href="account.html">Tài khoản</a></li>
+		</ul>
+		<div class="search">	
+			    <button><i class="fas fa-search"></i></button>
+			    <input type="search" id="searchhh" placeholder="  Tìm kiếm..." />
+			    
+		</div>
+	</nav>
+	<div class="nav-320px">
+		<div class="nav-show-mobile">
+			<div class="logo">
+				<a href="index.html">DuongMotor</a>
+			</div>
+			<div class="search">	
+				    <button><i class="fas fa-search"></i></button>
+				    <input type="search" id="searchhh" placeholder="  Tìm kiếm..." />
+				    
+			</div>
+			
+
+		</div>
+
+		<input type="checkbox" id="checkbox-mobile">
+			<label for="checkbox-mobile"><i class="fas fa-bars"></i></label>
+			<div class="background-320px"></div>
+		<div class="nav-mobile">
+			
+			<ul>
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="intro.html">giới thiệu</a></li>
+				<li>
+					<input type="checkbox" id="nav-more">
+					<a href="productmore.html"><label for="nav-more">sản phẩm</label></a><i class="fas fa-sort-down"></i> 
+
+					<ul>
+						<li><a href="honda.html">Honda</a></li>
+						<li><a href="kawasaki.html">Kawasaki</a></li>
+						<li><a href="honda.html">Yamaha</a></li>
+						<li><a href="honda.html">Suzuki</a></li>
+						<li><a href="honda.html">Royal Enfield</a></li>
+						<li><a href="honda.html">Beneli</a></li>
+						<li><a href="honda.html">Bixton</a></li>
+						<li><a href="honda.html">Hãng khác</a></li>
+					</ul>
+				</li>
+				<li><a href="service.html">Dịch vụ</a></li>
+				<li><a href="news.html">Tin tức</a></li>
+				<li><a href="cart.html">Giỏ hàng</a></li>
+				<li><a href="account.html">Tài khoản</a></li>
+			</ul>
+		</div>
+	</div>
+			<!-- menu top end -->
+	<div class="slide-show">		<!-- slide start -->
+		<div class="sliderr">
+		<div class="slides">
+			<input type="radio" name="radio-btn" id="radio1">
+			<input type="radio" name="radio-btn" id="radio2">
+			<input type="radio" name="radio-btn" id="radio3">
+			<input type="radio" name="radio-btn" id="radio4">
+
+			<div class="slide first">
+				<img src="img/banner.jpg">
+			</div>
+			
+			<div class="slide">
+				<img src="img/banner2.jpg">
+			</div>
+			
+			<div class="slide">
+				<img src="img/banner3.jpg">
+			</div>
+			
+			<div class="slide">
+				<img src="img/banner4.jpg">
+			</div>
+		</div>
+		<div class="headerigation manual">
+			<label for="radio1" class="manual-btn"></label>
+			<label for="radio2" class="manual-btn"></label>
+			<label for="radio3" class="manual-btn"></label>
+			<label for="radio4" class="manual-btn"></label>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var counter = 1;
+		setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++; 
+			if(counter > 4) {
+				counter = 1;
+			}
+		}, 5000);
+	</script>
+	</div>		<!-- slide end -->
+	<div class="main">		<!-- main star -->
+		<div class="intro">		<!-- introduce start -->
+			<a href="img/intro.mp4"><img src="img/intro.jpg"></a>
+			<div class="intro-p">
+				<h1>giới thiệu</h1>
+				<p><strong>Dương Motor</strong>  chuyên mua bán các dòng xe mô tô thể thao phong phú của các hãng nổi tiếng <strong>Honda, Yamaha, Suzuki, BMW, TRIUMPH, DUCATI, Kawasaki</strong>…có nhiều sự lựa chọn cho người chơi xe thể thao. Với rất nhiều dịch vụ hỗ trợ khách hàng, Dương Motor tự tin khẳng định mình là cửa hàng xe PKL, xe mô tô nhập khẩu <strong>UY TÍN</strong> và <strong>CHẤT LƯỢNG NHẤT VIỆT NAM</strong>.</p>
+				<div class="intro-more">
+					<h3><a href="intro.html">xem chi tiết</a></h3>
+				</div>
+			</div>
+		</div>
+		<div class="product">
+			<h1>sản phẩm nổi bật</h1>
+			<div class="products">
+				<div class="top-product">
+					<p>kawasaki chính hãng</p>
+				</div>
+				<a href="product01.html"><img src="img/main1.jpg"></a>
+				<div class="bottom-product">
+					<h2><a href="product01.html">ninja zx-10r 2021</a></h2>
+					<p>Giá bán: <strong>700.000.000 VNĐ</strong></p>
+					<div class="icon-star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="top-product">
+					<p>kawasaki chính hãng</p>
+				</div>
+				<a href="product02.html"><img src="img/main2.jpg"></a>
+				<div class="bottom-product">
+					<h2><a href="product02.html">ninja 400 abs se</a></h2>
+					<p>Giá bán: <strong>156.000.000 VNĐ</strong></p>
+					<div class="icon-star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="top-product">
+					<p>kawasaki chính hãng</p>
+				</div>
+				<a href="product03.html"><img src="img/main3.jpg"></a>
+				<div class="bottom-product">
+					<h2><a href="product03.html">ninja zx-10r abs</a></h2>
+					<p>Giá bán: <strong>517.100.000 VNĐ</strong></p>
+					<div class="icon-star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="top-product">
+					<p>kawasaki chính hãng</p>
+				</div>
+				<a href="product04.html"><img src="img/main4.jpg"></a>
+				<div class="bottom-product">
+					<h2><a href="product04.html">z400 abs</a></h2>
+					<p>Giá bán: <strong>149.000.000 VNĐ</strong></p>
+					<div class="icon-star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="top-product">
+					<p>kawasaki chính hãng</p>
+				</div>
+				<a href="product05.html"><img src="img/main5.jpg"></a>
+				<div class="bottom-product">
+					<h2><a href="product05.html">z65 abs</a></h2>
+					<p>Giá bán: <strong>190.000.000 VNĐ</strong></p>
+					<div class="icon-star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+			</div>
+			<div class="products">
+				<div class="top-product">
+					<p>kawasaki chính hãng</p>
+				</div>
+				<a href="product06.html"><img src="img/main6.jpg"></a>
+				<div class="bottom-product">
+					<h2><a href="product06.html">kawasaki z900 abs</a></h2>
+					<p>Giá bán: <strong>288.000.000 VNĐ</strong></p>
+					<div class="icon-star">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="view-product">
+			<h2><a href="productmore.html">xem tất cả <i class="fa fa-chevron-right"></i></a></h2>
+		</div>
+		<div class="service">
+			<img src="img/service.jpg">
+			<div class="service-left"></div>
+			<div class="service-right">
+				<h1>dịch vụ của dương motor</h1>
+				<p>Dương motor là nơi phân phối hơn 16 siêu phẩm motor đến từ Kawasaki - thương hiệu motor hàng đầu thế giới. Nhằm đem lại những dịch vụ tốt nhất đến khách hàng như :</p>
+				<ul>
+					<li><i class="fas fa-check"></i>   Dịch vụ cứu hộ xe pkl 24/24.</li>
+					<li><i class="fas fa-check"></i>   Nhận Design, độ chế tân trang, sửa chữa xe PKL</li>
+					<li><i class="fas fa-check"></i>   Bọc carbon fiber cho tất cả các chi tiết xe.</li>
+					<li><i class="fas fa-check"></i>   Đồ chơi xe mô tô: Phuộc Upside Down, Pô độ xe PKL, Móc Pô cho các dòng xe PKL</li>
+					<li><i class="fas fa-check"></i>   Lên Cafe Racer, Tracker, Cruiser, Bobber</li>
+					<li><i class="fas fa-check"></i>   Xử lý, sữa chữa tất cả khung sườn, chảng 3</li>
+					<li><i class="fas fa-check"></i>   Nhận phục hồi tất cả các xe tai nạn PKL.</li>
+					<li><i class="fas fa-check"></i>   Cung cấp đồ chơi, linh kiện, phụ kiện chính hãng.</li>
+					<li><i class="fas fa-check"></i>   Chuyên Thiết Kế Tem Xe theo yêu cầu</li>
+					<li><i class="fas fa-check"></i>   Cung Cấp Sỉ Lẻ Các Loại Tem Xe</li>
+				</ul>
+			</div>
+		</div>
+		<div class="news">
+			<h1>tin tức</h1>
+			<div class="news01">
+				<a href="news01.html"><img src="img/news01.jpg"></a>
+				<div class="news-top"></div>
+				<h3><a href="news01.html">chương trình đổi cũ lấy mới lên đời xe sang được triển khai bởi kawasaki việt nam Dương motor</a></h3>
+				<p>Chương Trình Đổi Cũ Lấy Mới Lên Đời Xe Sang lớn nhất từ trước đến này. Từ ngày …. Kawasaki Chính  hãng Dương Motor Hà Nội chính thức ...</p>
+			</div>
+			
+				<div class="news02">
+					<a href="news02.html"><img src="img/news02.jpg"></a>
+					<h4><a href="news02.html">kawasaki ninja h2 cacbon 2021 chính thức được nhận cọc bởi Dương motor</a></h4>
+					<p>Kawasaki ninja H2 Carbon là cái tên huyền thoại trong làng PKL, đây là chiếc xe được rất nhiều ...</p>
+					
+				</div>
+				<div class="news03">
+					<a href="news03.html"><img src="img/news03.jpg"></a>
+					<h4><a href="news03.html">motorsaigon đưa tin hàng trăm biker tham dự ngày hội kawasaki biker day 2021 cùng</a></h4>
+					<p>Hàng trăm biker tham dự ngày hội Kawasaki Biker Day 2021 cùng Kawasaki Dương Motor Kawasaki ...</p>
+					
+				</div>
+				<div class="news04">
+					<a href="news04.html"><img src="img/news04.jpg"></a>
+					<h4><a href="news04.html">đại lý kawasaki - dương motor đồng hành cùng event kawasaki day 2021</a></h4>
+					<p>ĐẠI LÝ KAWASAKI –  DƯƠNG MOTOR ĐỒNG HÀNH CÙNG EVENT KAWASAKI DAY 2021 Kawasaki Day là...</p>
+				</div>
+			
+			<div class="view-product">
+				<h2><a href="news.html">xem tất cả <i class="fa fa-chevron-right"></i></a></h2>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="logo-bot">
+			DuongMotor		
+		</div>
+		<div class="content-footer">
+			<h4>công ty tnhh phát triển thương mại thế hệ mới - gpdk số: 1001109227</h4>
+			<div class="contact">
+				<h3>liên hệ</h3>
+				<p><i class="fas fa-phone"></i> Hotline Hà Nội: <strong>0868298822</strong></p>
+				<p><i class="fas fa-phone"></i> Hotline Sài Gòn: <strong>0868298833</strong></p>
+				<p><i class="fas fa-envelope"></i> <strong>thuongmotor@gmail.com</strong></p>
+				<p><i class="fa fa-globe"></i> Website: <strong>https://thuongmotor.com</strong></p>
+			</div>
+			<div class="showroom">
+				<h3>showroom</h3>
+				<p><i class="fas fa-home"></i> Showroom 1: L/K 21/3, KĐTM Văn Khê, P. La Khê, Q. Hà Đông, Hà Nội(Đối diện nhà chờ BRT Văn Khê).</p>
+				<p><i class="fas fa-home"></i> Showroom 2: 415 Phạm Văn Đồng, phường Linh Đông, quận Thủ Đức, TP.HCM.( gần vòng xoay Kha Vạn Cân và Phạm Văn Đồng).</p>
+			</div>
+			<div class="more-web">
+				<h3>về trang web</h3>
+				<a href="intro.html">Giới thiệu</a><br>
+				<a href="#">Liên hệ</a><br>
+				<a href="#">Quyền lợi & Lợi ích</a><br>
+				<a href="#">Điều khoản sử dụng</a><br>
+				<a href="#">Chính sách bảo mật</a><br>
+			</div>
+			<div class="follow-me">
+				<h3>theo dõi chúng tôi</h3>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-pinterest-square"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+
+		</div>
+	</div>
+</body>
+</html>

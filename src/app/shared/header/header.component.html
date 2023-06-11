@@ -1,0 +1,25 @@
+<nav>
+		<div class="logo">
+			<a href="index.html">ThuongMotor</a>
+		</div>
+		<ul>
+			<li><a href="index.html" style="color: #69BE28">Trang chủ</a></li>
+			<li><a href="/intro">giới thiệu</a></li>
+			<li>
+				<a href="productmore.html">sản phẩm</a>
+				<ul>
+					<li *ngFor="let item of category"><a href="/category/{{item.id}}">{{item.name}}</a></li>
+					
+				</ul>
+			</li>
+			<li><a href="service.html">Dịch vụ</a></li>
+			<li><a href="/news">Tin tức</a></li>
+			<li><a href="/cart">Giỏ hàng</a></li>
+		
+		</ul>
+		<div class="search">	
+			    <button><i class="fas fa-search"></i></button>
+			    <input type="search" id="searchhh" placeholder="  Tìm kiếm..." />
+			    
+		</div>
+	</nav>

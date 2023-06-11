@@ -1,0 +1,51 @@
+<div id="main">
+    <div class="container">
+        <div class="row">
+            <div class=" col-lg-12">
+                <a href="">Trang chủ</a>
+            </div>
+            <div class="col-lg-12">
+                <div class="main-title">
+                    <span>Sản phẩm nổi bật</span>
+                </div>
+            </div>
+            <div class="col-lg-12 sort-cate">
+                <span>Xếp Theo:</span>
+                <li><a href=""><i></i>xếp theo từ a-z</a></li>
+                <li><a href=""><i></i>xếp theo từ z-a</a></li>
+                <li><a href=""><i></i>Hàng mới</a></li>
+
+
+            </div>
+            <div class="col-lg-12">
+                <div class="main-product row ms-0 p-0 mt-3">
+                    <div class="product"
+                        *ngFor="let item of product|filter:searchText| paginate:{ itemsPerPage : tableSize, currentPage: page, totalItems: count};let i = index">
+                        <div class=" product-img">
+                            <div class="product-imgs">
+                                <img [src]="'http://127.0.0.1:8000/storage/image/product/'+item.image[0]?.img_product"
+                                    alt="">
+                                <button><a href="/detail/{{item.id}}" class="btn-fa-link"><i
+                                            class="fa-solid fa-link"></i></a></button>
+                            </div>
+                        </div>
+                        <label class="name-product"><a href="/detail/{{item.id}}">{{item.name}}</a></label>
+                        <label class="product-price">{{(item.price|currency:'VND').slice(1) + 'đ' }}</label>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="product__pagination">
+                        <div>
+                            <pagination-controls previousLabel="" nextLabel="" (pageChange)="ontableDataChange($event)"
+                                class="product__paginations">
+                            </pagination-controls>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

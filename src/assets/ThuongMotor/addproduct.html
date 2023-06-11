@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+	<title>Admin - Cửa Hàng Mua Bán Xe Mô Tô PKL Nhập Khẩu | Dương Motor</title>
+	<style>
+		body{
+			background: #EBEEF0;
+		}
+		.search{
+			float: left;
+			margin-left: 150px;
+			
+		}
+		#searchhh{
+			background: #EDEEEF;
+			height: 40px;
+			margin-top: -10px;
+			width: 200px;
+		}
+		.fa-search{
+			background: #FFF;
+			color: #000;
+			border: none;
+			font-size: 1.6rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="admin-header">
+		<div class="logo-admin">
+			DuongMotor
+		</div>
+		<div class="search">	
+			<button><i class="fas fa-search"></i></button>
+			<input type="search" id="searchhh" placeholder="  Tìm kiếm..." />
+		</div>
+		<div class="avt">
+			<img src="img/avt.jpg">
+			<i class="fas fa-caret-down" style="line-height:60px"></i>
+			<div class="avt-more">
+				<ul>
+					<li>Chỉnh sửa</li>
+					<li>Chế độ</li>
+					<li>Cài đặt</li>
+					<li>Đăng xuất</li>
+				</ul>
+			</div>
+		</div>
+		<p>Chào, Dương</p>
+	</div>
+	<div class="navbar-admin">
+		<ul>
+			<li><i class="fas fa-home"></i> Trang chủ</li>
+			<li><i class="fas fa-pen"></i> Bài viết</li>
+			<li><i class="fas fa-images"></i> Banner</li>
+			<li class="hover-sub-menu"><i class="fas fa-cart-plus"></i> Sản phẩm <i class="fas fa-caret-down"></i>
+				<ul class="sub-menu">
+					<li><a href="#">Danh mục</a></li>
+					<li><a href="#">Quản lí</a></li>
+					<li><a href="#">Thêm</a></li>
+					<li><a href="#">Nhập HĐ</a></li>
+					<li><a href="#">Xuất HĐ</a></li>
+					<li><a href="#">Thống kê</a></li>
+				</ul>
+			</li>
+			<li><i class="fas fa-music"></i> Phương tiện</li>
+			<li><i class="fas fa-file"></i> Trang</li>
+			<li><i class="fab fa-facebook-messenger"></i> Phản hồi</li>
+			<li><i class="fas fa-envelope"></i> Contact</li>
+		</ul>
+	</div>
+	<div class="main-add-product">
+		<div class="admin-left-add">
+			<p>Loại sản phẩm:</p>
+			<select class="select-admin">
+				<option value="0">Chọn hãng xe</option>
+				<option value="1">Honda</option>
+				<option value="2">Kawasaki</option>
+				<option value="3">Yamaha</option>
+				<option value="4">Suzuki</option>
+				<option value="5">Royal Enfield</option>
+				<option value="6">Beneli</option>
+				<option value="7">Bixton</option>
+				<option value="8">Hãng khác</option>
+			</select>
+			<p>Mã sản phẩm:</p>
+			<input type="text" class="code-product">
+			<p>Tên sản phẩm:</p>
+			<input type="text" class="code-product">
+			<p>Số lượng:</p>
+			<input type="text" class="code-product">
+		</div>
+		<div class="admin-right-add">
+			<br><br><br><br>
+			<p>Ngày nhập</p>
+			<input type="date" value="2008-09-01" class="calendar">
+			<p>Giá nhập:</p>
+			<input type="text" class="code-product">
+			<p>Giá bán:</p>
+			<input type="text" class="code-product">
+		</div>
+		<div class="admin-bottom-add">
+			<p><b>Mô tả chi tiết:</b></p>
+			<input type="text" class="more-add-product">
+			<button type="button" class="add-button">Thêm sản phẩm</button>
+		</div>
+	</div>
+</body>
+</html>

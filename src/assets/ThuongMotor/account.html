@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng nhập tài khoản - Mô tô Phân Khối Lớn Nhập Khẩu | Dương Motor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src = "jquery-3.6.0.min.js"></script>
+</head>
+    <script>
+       
+        $(document).ready(function(){
+            $('.btn-submit').click(function(event){
+                var a = $(".input-acc").val();
+                var b = $(".input-pass").val();
+                
+                if(a=="admin" && b=="admin"){
+                    window.location = "admin.html";
+                    alert("Đăng nhập thành công");
+                    
+                }
+                else{
+                    alert("Tên tài khoản hoặc mật khẩu sai. Vui lòng nhập lại!");
+                }
+            });
+        });
+    
+    </script>
+<body>
+    
+	<div class="account">
+      <h1>ĐĂNG NHẬP</h1>  
+    </div>
+    <div class="img-account">
+        <img src="img/account/account.jpg">
+    </div>    
+        <div class="login-form">
+
+            <div class="input-box">
+                <input type="e-mail" class="input-acc" placeholder="Phone number or E-mail">
+            </div>
+
+            <div class="input-box">
+                <input type="password" class="input-pass" placeholder="Password">
+            </div>
+
+            <div class="btn-box">
+               <button type="button" class="btn-submit">Đăng nhập</button>
+            </div>
+
+            <a href="account2.html"><p>Chưa có tài khoản?</p></a>
+        </div>
+   </body>
+</html>

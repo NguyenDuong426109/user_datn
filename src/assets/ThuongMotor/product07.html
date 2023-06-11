@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NINJA ZX-10R 2021 - Mô tô Phân Khối Lớn Nhập Khẩu | Dương Motor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<script src = "jquery-3.6.0.min.js"></script>
+	<script src="main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<a href="index.html">DuongMotor</a>
+		</div>
+		<ul>
+			<li><a href="index.html" style="color: #69BE28">Trang chủ</a></li>
+			<li><a href="intro.html">giới thiệu</a></li>
+			<li>
+				<a href="productmore.html">sản phẩm</a>
+				<ul>
+					<li><a href="honda.html">Honda</a></li>
+					<li><a href="kawasaki.html">Kawasaki</a></li>
+					<li><a href="honda.html">Yamaha</a></li>
+					<li><a href="honda.html">Suzuki</a></li>
+					<li><a href="honda.html">Royal Enfield</a></li>
+					<li><a href="honda.html">Beneli</a></li>
+					<li><a href="honda.html">Bixton</a></li>
+					<li><a href="honda.html">Hãng khác</a></li>
+				</ul>
+			</li>
+			<li><a href="service.html">Dịch vụ</a></li>
+			<li><a href="news.html">Tin tức</a></li>
+			<li><a href="cart.html">Giỏ hàng</a></li>
+			<li><a href="account.html">Tài khoản</a></li>
+		</ul>
+		<div class="search">	
+			    <button><i class="fas fa-search"></i></button>
+			    <input type="search" id="searchhh" placeholder="  Tìm kiếm..." />
+			    
+		</div>
+	</nav>
+	<div class="nav-320px">
+		<div class="nav-show-mobile">
+			<div class="logo">
+				<a href="index.html">DuongMotor</a>
+			</div>
+			<div class="search">	
+				    <button><i class="fas fa-search"></i></button>
+				    <input type="search" id="searchhh" placeholder="  Tìm kiếm..." />
+				    
+			</div>
+			
+
+		</div>
+
+		<input type="checkbox" id="checkbox-mobile">
+			<label for="checkbox-mobile"><i class="fas fa-bars"></i></label>
+			<div class="background-320px"></div>
+		<div class="nav-mobile">
+			
+			<ul>
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="intro.html">giới thiệu</a></li>
+				<li>
+					<input type="checkbox" id="nav-more">
+					<a href="#"><label for="nav-more">sản phẩm</label></a><i class="fas fa-sort-down"></i> 
+
+					<ul>
+						<li><a href="honda.html">Honda</a></li>
+						<li><a href="kawasaki.html">Kawasaki</a></li>
+						<li><a href="honda.html">Yamaha</a></li>
+						<li><a href="honda.html">Suzuki</a></li>
+						<li><a href="honda.html">Royal Enfield</a></li>
+						<li><a href="honda.html">Beneli</a></li>
+						<li><a href="honda.html">Bixton</a></li>
+						<li><a href="honda.html">Hãng khác</a></li>
+					</ul>
+				</li>
+				<li><a href="service.html">Dịch vụ</a></li>
+				<li><a href="news.html">Tin tức</a></li>
+				<li><a href="cart.html">Giỏ hàng</a></li>
+				<li><a href="account.html">Tài khoản</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="banner-intro">
+		
+			<h1>NINJA ZX-10R 2021</h1>
+			
+		
+	</div>
+	<div class="big-detail">
+		<div class="big">
+			<div class="slider1">
+				<div class="slides1">
+					<input type="radio" name="radio-btn" id="radio5">
+					<input type="radio" name="radio-btn" id="radio6">
+					<input type="radio" name="radio-btn" id="radio7">
+					<input type="radio" name="radio-btn" id="radio8">
+						<div class="img first1">
+							<a href="img/product01/product01.jpg"><img src="img/product01/product01.jpg"></a>
+						</div>
+						
+						<div class="img">
+							<a href="img/product01/product02.jpg"><img src="img/product01/product02.jpg"></a>
+						</div>
+						
+						<div class="img">
+							<a href="img/product01/product05.jpg"><img src="img/product01/product05.jpg"></a>
+						</div>
+						
+						<div class="img">
+							<a href="img/product01/product01.jpg"><img src="img/product01/product02.jpg"></a>
+						</div>
+				</div>
+				<div class="navigation1 manual">
+					<label for="radio5" class="manual-button">
+						<img src="img/product01/product01.jpg">
+					</label>
+					<label for="radio6" class="manual-button">
+						<img src="img/product01/product02.jpg">
+					</label>
+					<label for="radio7" class="manual-button">
+						<img src="img/product01/product05.jpg">
+					</label>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var counter = 5;
+			setInterval(function(){
+				document.getElementById('radio' + counter).checked = true;
+				counter++; 
+				if(counter > 8) {
+					counter = 5;
+				}
+			}, 5000);
+		</script>
+
+		<div class="detail">
+			<img class="product-img" src="img/product01/product01.jpg" style="display:none">
+			<h1 class="product-name">NINJA ZX-10R 2021</h1>
+			<h3>Giá bán: <strong class="product-price">700000000 VNĐ</strong></h3>
+			<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+			<p>Giá dự kiến chưa phải giá chính thức</p>
+			<h3><b>Thông số kỹ thuật:</b></h3>
+			<p>Dài x Rộng x Cao: 2090mm x 745mm x 1145mm</p>
+			<p>Cỡ lốp trước/sau : Trước 120/70 ZR17 ; Sau 190/55 ZR17</p>
+			<p>Dung tích xy-lanh : 998cc</p>
+			<p>Hộp số : 6 cấp</p>
+			<p>Phanh trước/sau: Kawasaki Intelligent anti-lock Braking (KIBS), 310mm đĩa cánh hoa, bốn piston kép</p>
+			<p>Độ cao yên : 835mm</p>
+			<p>Loại động cơ : Bốn thì, làm mát bằng nước, DOHC, bốn van mỗi xi-lanh, inline</p>
+			<p>Công suất tối đa : 200 mã lực tại 13.200 vòng/phút</p>
+			<p>Hệ thống cung cấp nhiên liệu: DFI® 47mm Keihin, hai kim phun cho mỗi xi lanh</p>
+			<p>Tên sản phẩm : Kawasaki Ninja ZX-10R ABS 2021</p>
+
+			<input class="btn-buy" type="button" value="Thêm vào giỏ" />
+			<a href="payment.html"><input class="btn-buys" type="button" value="Đặt mua"></a>
+		</div>
+			
+	</div>
+	<div class="content-product">
+	    <h2>Thông tin sản phẩm</h2>
+	    <h3>Kawasaki ZX10R 2021 sẽ ra mắt trong thời gian sắp tới dự kiến sẽ tạo nên cơn bão trong cộng đồng kawasaki Việt Nam</h3>
+	    <p>Trong tất cả các anh em nhà Kawasaki ngoài anh cả H2 ra thì phải nhắc đến 1 cái tên đáng gờm khác mà tất cả các dòng xe phân khối lớn đền không dám qua mặt, đó chính là Ninja ZX10R.</p><br>
+	    <p>Sắp tới đây Ninja ZX10R 2021 sẽ được ra mắt tại Việt Nam với bản màu Xanh Kawasaki truyền thống, và điểm nhấn đặc biệt là bộ tem racing đặc trưng trắng đỏ đang làm mưa làm gió hiện nay.</p>
+	    <img src="img/product01/product01.jpg">
+	    <h4>Bản màu xanh Kawasaki truyền thống và bô tem racing trắng đỏ đang hot hiện nay</h4>
+	    <p><strong>Kawasaki Ninja ZX10R mới 2021</strong> sẽ có những thay đổi giúp mẫu sportbike có công suất hơn 200 mã lực. Kawasaki đã công bố bản nâng cấp động cơ cho <strong>Kawasaki Ninja ZX-10R 2021</strong>, đẩy công suất đầu ra của mẫu sportbike lên 200 mã lực tại 13.200 vòng/phút (so với 13.500 vòng/phút của phiên bản trước).</p><br>	    
+	    <p><strong>Kawasaki Ninja ZX-10R ABS 2021</strong> được nhập khẩu nguyên chiếc về Việt Nam. <strong>Giá xe Ninja ZX-10R 2021</strong> hiện nay tại các đại lý Kawasaki dự kiến sẽ rơi vào khoảng 700.000.000 (đã bao gồm VAT, chưa có phí trước bạ và biển số). <strong>Ninja ZX-10R</strong> là Superbike cạnh tranh với các đối thủ cùng phân khúc 1000 phân khối, không được trau chuốt trong thiết kế như các đối thủ Ducati, MV Agusta nhưng lại được đánh giá cao về phần tốc độ thiết kế góc cạnh thiên về khí động học.</p> <br>
+	    <img src="img/product01/product02.jpg">
+	    <img src="img/product01/product05.jpg">
+	    <h4>Hình ảnh chạy test sân của Ninja ZX 10R 2021</h4>
+	    <p><strong>Kawasaki Ninja ZX-10R 2021</strong> phiên bản cao nhất cho tới thời điểm hiện tại với hàng loại tính năng cùng trang bị cao cấp hiện đại bao gồm chống bó cứng phanh KIBS, kiểm soát tăng tốc Kawasaki Launch Control (KLCS), phanh động cơ KEBC, kiểm soát chống trượt (S-KTRC), cần chuyển số nhanh (KQS) giúp nó tự tin bước vào cuộc chơi Superbike thương mại sở hữu sức mạnh vượt ngưỡng 200 mã lực.</p><br>
+	    <p><strong>Ninja ZX-10R 2021</strong> có chiều dài 2.085 mm, rộng 745 mm và cao 1.145 mm. Chiều cao yên 835 mm, độ dài cơ sở 1.440 mm, chiều cao gầm 145 mm với thiết kế gần giống với nhiều người anh em tiền nhiệm vẫn giữ ngôn ngữ thiết kế hầm hố, góc cạnh.</p>
+	    <img src="img/product01/product04.jpg">
+	    <h4>Ảnh chi tiết từ sau xe</h4>
+	    <p><strong>Kawasaki Ninja ZX-10R 2021</strong> có nhiều thay đổi hơn ở phần đầu và đuôi xe khi trang bị cho đứa con của mình khe hút gió lớn hơn, tiết diện cụm đèn pha đôi thu hẹp lại gia tăng khả năng khí động học cho xe. Kính gió của ZX10R không nhô cao như đời trước nhưng gọn gàng.</p><br>
+	    <p><strong>Ninja ZX-10R 2021</strong> được trang bị khối động cơ 998 cc, 4 xi-lanh thẳng hàng, DOHC, 16 van, làm mát bằng nước. Công suất tối đa 200 mã lực tại dải tua 13.200 vòng/phút và mô-men xoắn tối đa 114,9 Nm tại 11.400 vòng/phút, tốc độ tối đa 299 km/h, tăng tốc 0-100 km/h trong 2,9 giây, hộp số 6 tốc độ.</p><br>
+	    <p>Bảng đồng hồ điện tử <strong>Kawasaki Ninja ZX-10R 2021</strong> đã được nâng cấp lên màn hình màu TFT LCD hiển thị đầy đủ các thông số kỹ thuật như ODO, các trip chạy và các Mode vận hành trên xe như Sport, Road, Rain và Rider.. Ngoài ra, <strong>ZX-10R 2021</strong> còn có chức năng kết nối với điện thoại thông minh cũng như kiểm soát hành trình.</p>
+	    <img src="img/product01/product03.jpg">
+	    <h4>Ảnh chi tiết chụp từ trước xe</h4>
+	    <p>Bình xăng <strong>Kawasaki Ninja ZX-10R 2021</strong> có dung tích 17 lít, mức tiêu hao nhiên liệu khoảng 9-10 km/lít trong thành phố, 14 km/lít trên xa lộ. Nếu đổ đầy xăng, cự ly hành trình đạt gần 300 km.</p><br>
+	    <p><strong>Kawasaki Ninja ZX-10R 2021</strong> được trang bị bộ mâm 3 chấu hợp kim, lực hãm của xe bắt nguồn từ hệ thống phanh Brembo M50 4 piston, đúc bằng nhôm nhằm giảm trọng lượng kết hợp với hệ thống phanh đĩa đường kính 330 mm phía trước và 220 mm phía sau. ZX-10R 2021 sử dụng phuộc Balance Free Fork đường kính 43 mm có thể tăng chỉnh của Showa với xy-lanh khí nén sơn màu bạc khác biệt. Kawasaki Ninja ZX-10R 2021 sẽ sớm được bán thông qua hệ thống cửa hàng bán xe và dịch vụ sửa chữa do Kawasaki ủy nhiệm tại Việt Nam trên toàn quốc với chế độ bảo hành chính hãng.</p>
+	    <img src="img/product01/product01.jpg">
+	    <h4>Bản màu chính thức sẽ về Việt Nam trong thời gian sắp tới</h4>
+	    <p>Hiện nay Kawasaki Việt Nam – Thưởng Motor Hà Nội đang nhận đặt cọc xe cho những tín đồ đam mê bản  ZX10R 2021, dự kiến xe sẽ có mặt tại Việt Nam trong thời gian sớm nhất. Mọi người cùng chờ đợi mẫu xe hot nhất năm này nhé!</p>
+	</div>
+	<div class="footer">
+		<div class="logo-bot">
+			DuongMotor		
+		</div>
+		<div class="content-footer">
+			<h4>công ty tnhh phát triển thương mại thế hệ mới - gpdk số: 1001109227</h4>
+			<div class="contact">
+				<h3>liên hệ</h3>
+				<p><i class="fas fa-phone"></i> Hotline Hà Nội: <strong>0868298822</strong></p>
+				<p><i class="fas fa-phone"></i> Hotline Sài Gòn: <strong>0868298833</strong></p>
+				<p><i class="fas fa-envelope"></i> <strong>thuongmotor@gmail.com</strong></p>
+				<p><i class="fa fa-globe"></i> Website: <strong>https://thuongmotor.com</strong></p>
+			</div>
+			<div class="showroom">
+				<h3>showroom</h3>
+				<p><i class="fas fa-home"></i> Showroom 1: L/K 21/3, KĐTM Văn Khê, P. La Khê, Q. Hà Đông, Hà Nội(Đối diện nhà chờ BRT Văn Khê).</p>
+				<p><i class="fas fa-home"></i> Showroom 2: 415 Phạm Văn Đồng, phường Linh Đông, quận Thủ Đức, TP.HCM.( gần vòng xoay Kha Vạn Cân và Phạm Văn Đồng).</p>
+			</div>
+			<div class="more-web">
+				<h3>về trang web</h3>
+				<a href="intro.html">Giới thiệu</a><br>
+				<a href="#">Liên hệ</a><br>
+				<a href="#">Quyền lợi & Lợi ích</a><br>
+				<a href="#">Điều khoản sử dụng</a><br>
+				<a href="#">Chính sách bảo mật</a><br>
+			</div>
+			<div class="follow-me">
+				<h3>theo dõi chúng tôi</h3>
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+				<a href="#"><i class="fab fa-pinterest-square"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+
+		</div>
+	</div>
+	</div>
+</body>
+</html>

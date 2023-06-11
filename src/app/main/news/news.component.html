@@ -1,0 +1,47 @@
+<!-- <div class="product">
+    <h1>Tin tức</h1>
+    <div class="products" *ngFor="let item of new;let i = index">
+        
+        <div class="top-product">
+            <p>Xe chính hãng</p>
+        </div>
+        <a href="/detail-news/{{item.id}}"><img src="http://127.0.0.1:8000/storage/{{item.avatar_path}}"
+            alt=""></a>
+        <div class="bottom-product">
+            <h2><a href="/detail-news/{{item.id}}">{{item.title}}</a></h2>
+            <p>{{item.desctiption}}</p>
+            <div class="icon-star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+   
+</div> -->
+<div class="service-more">
+    <div class="content-product" style="margin-left: 5%">
+        <h2>Tin tức</h2>
+    </div>
+
+    <div class="service-item" *ngFor="let item of new;let i = index">
+        <div class="service-item-top">
+            <h3><a href="/detail-news/{{item.id}}">Xem chi tiết</a></h3>
+        </div>
+
+        <img src="http://127.0.0.1:8000/storage/{{item.avatar_path}}">
+
+        <h2><a href="/detail-news/{{item.id}}">{{item.title}}</a></h2>
+        <br>
+        <h4><i class="fas fa-calendar-alt"></i> {{item.created_at | date:'dd/MM/yyyy'}}</h4>
+
+        <!-- <h4><i class="fas fa-eye"></i> 938.191 Lượt xem</h4> -->
+
+        <p>{{item.description}}</p>
+    </div>
+
+   
+    
+</div>

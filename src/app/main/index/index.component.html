@@ -1,0 +1,134 @@
+<div class="slide-show">		<!-- slide start -->
+    <div class="sliderr">
+    <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+
+        <div class="slide first">
+            <img src="assets/img/img/banner.jpg">
+        </div>
+        
+        <div class="slide">
+            <img src="assets/img/img/banner2.jpg">
+        </div>
+        
+        <div class="slide">
+            <img src="assets/img/img/banner3.jpg">
+        </div>
+        
+        <div class="slide">
+            <img src="assets/img/img/banner4.jpg">
+        </div>
+    </div>
+    <div class="headerigation manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var counter = 1;
+    setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++; 
+        if(counter > 4) {
+            counter = 1;
+        }
+    }, 5000);
+</script>
+</div>	
+<div class="intro">		<!-- introduce start -->
+    <a style="cursor: pointer;"><img src="assets/img/img/intro.jpg"></a>
+    <div class="intro-p">
+        <h1>giới thiệu</h1>
+        <p><strong>Dương Motor</strong>  chuyên mua bán các dòng xe mô tô thể thao phong phú của các hãng nổi tiếng <strong>Honda, Yamaha, Suzuki, BMW, TRIUMPH, DUCATI, Kawasaki</strong>…có nhiều sự lựa chọn cho người chơi xe thể thao. Với rất nhiều dịch vụ hỗ trợ khách hàng, Dương Motor tự tin khẳng định mình là cửa hàng xe PKL, xe mô tô nhập khẩu <strong>UY TÍN</strong> và <strong>CHẤT LƯỢNG NHẤT VIỆT NAM</strong>.</p>
+        <div class="intro-more">
+            <h3><a href="/intro">xem chi tiết</a></h3>
+        </div>
+    </div>
+</div>
+<div class="product">
+    <h1>sản phẩm nổi bật</h1>
+    <div class="products" *ngFor="let item of product|filter:searchText| paginate:{ itemsPerPage : tableSize, currentPage: page, totalItems: count};let i = index">
+        
+        <div class="top-product">
+            <p>Xe chính hãng</p>
+        </div>
+        <a href="/detail/{{item.id}}"><img [src]="'http://127.0.0.1:8000/storage/image/product/'+item.image[0]?.img_product"
+            alt=""></a>
+        <div class="bottom-product">
+            <h2><a href="/detail/{{item.id}}">{{item.name}}</a></h2>
+            <p>Giá bán: <strong>{{(item.price|currency:'VND').slice(1) + 'đ' }}</strong></p>
+            <div class="icon-star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+   
+</div>
+<!-- <div class="view-product">
+    <h2><a href="productmore.html">xem tất cả <i class="fa fa-chevron-right"></i></a></h2>
+</div> -->
+<div class="service">
+    <img src="assets/img/img/service.jpg">
+    <div class="service-left"></div>
+    <div class="service-right">
+        <h1>dịch vụ của thuongmotor</h1>
+        <p>Dương motor là nơi phân phối hơn 16 siêu phẩm motor đến từ Kawasaki - thương hiệu motor hàng đầu thế giới. Nhằm đem lại những dịch vụ tốt nhất đến khách hàng như :</p>
+        <ul>
+            <li><i class="fas fa-check"></i>   Dịch vụ cứu hộ xe pkl 24/24.</li>
+            <li><i class="fas fa-check"></i>   Nhận Design, độ chế tân trang, sửa chữa xe PKL</li>
+            <li><i class="fas fa-check"></i>   Bọc carbon fiber cho tất cả các chi tiết xe.</li>
+            <li><i class="fas fa-check"></i>   Đồ chơi xe mô tô: Phuộc Upside Down, Pô độ xe PKL, Móc Pô cho các dòng xe PKL</li>
+            <li><i class="fas fa-check"></i>   Lên Cafe Racer, Tracker, Cruiser, Bobber</li>
+            <li><i class="fas fa-check"></i>   Xử lý, sữa chữa tất cả khung sườn, chảng 3</li>
+            <li><i class="fas fa-check"></i>   Nhận phục hồi tất cả các xe tai nạn PKL.</li>
+            <li><i class="fas fa-check"></i>   Cung cấp đồ chơi, linh kiện, phụ kiện chính hãng.</li>
+            <li><i class="fas fa-check"></i>   Chuyên Thiết Kế Tem Xe theo yêu cầu</li>
+            <li><i class="fas fa-check"></i>   Cung Cấp Sỉ Lẻ Các Loại Tem Xe</li>
+        </ul>
+    </div>
+</div>
+<div class="news">
+    <h1>tin tức</h1>
+    <!-- <div class="news01">
+        <a href="/detail-news/{{new_first.id}}"><img src="http://127.0.0.1:8000/storage/{{new_first.avatar_path}}"></a>
+        <div class="news-top"></div>
+        <h3><a href="/detail-news/{{new_first.id}}">{{new_first.title}}</a></h3>
+        <p>{{new_first.description}}</p>
+    </div>
+    
+        <div class="news02" *ngFor="let n of new_down;let i = index">
+            <a href="/detail-news/{{n.id}}"><img src="http://127.0.0.1:8000/storage/{{n.avatar_path}}"></a>
+            <h4><a href="/detail-news/{{n.id}}">{{n.title}}</a></h4>
+            <p>{{n.description}}</p>
+            
+        </div> -->
+        
+    
+    <!-- <div class="view-product">
+        <h2><a href="news.html">xem tất cả <i class="fa fa-chevron-right"></i></a></h2>
+    </div> -->
+    <div class="news01">
+        <a href="/detail-news/{{new_first.id}}"><img src="http://127.0.0.1:8000/storage/{{new_first.avatar_path}}"></a>
+        <div class="news-top"></div>
+        <h3><a href="/detail-news/{{new_first.id}}">{{new_first.title}}</a></h3>
+    </div>
+    <div class="newall">
+        <div class="news02" *ngFor="let n of new_down;let i = index">
+            <a href="news02.html"><img src="http://127.0.0.1:8000/storage/{{n.avatar_path}}"></a>
+            <h4><a href="/detail-news/{{n.id}}">{{n.title}}</a></h4>
+            
+        </div>
+       
+    </div>
+
+</div>
